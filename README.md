@@ -1,5 +1,6 @@
 # Soundness Command
 Discord: https://discord.gg/fAbDjmAyHs
+Telegram: https://t.me/NachT_DROP
 
 This guide provides step-by-step instructions to install Rust, set up Soundness Layer, and manage key pairs using `soundness-cli`.
 

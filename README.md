@@ -3,7 +3,12 @@ Discord: https://discord.gg/fAbDjmAyHs
 Telegram: https://t.me/NachT_DROP
 
 
-Offitial link: https://soundness.xyz/
+
+
+
+🔹 Tw: https://tinyurl.com/yc7y3bzw
+🔹DC: https://tinyurl.com/e7j8pp63
+🔹Offitial link: https://soundness.xyz/
 
 This guide provides step-by-step instructions to install Rust, set up Soundness Layer, and manage key pairs using `soundness-cli`.
 

@@ -1,35 +1,79 @@
-COMMANDS
+# Soundness Command
+Discord: https://discord.gg/fAbDjmAyHs
 
-`sudo apt update && sudo apt upgrade -y`
+This guide provides step-by-step instructions to install Rust, set up Soundness Layer, and manage key pairs using `soundness-cli`.
 
-`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+## Prerequisites
+Ensure your system is up to date:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
 
-`source $HOME/.cargo/env`
+## Install Rust
+Download and install Rust:
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
-`rustc --version
-cargo --version`
+Load Rust environment:
+```bash
+source $HOME/.cargo/env
+```
 
-`echo 'source $HOME/.cargo/env' >> ~/.bashrc`
+Verify Rust and Cargo installation:
+```bash
+rustc --version && cargo --version
+```
 
-`source ~/.bashrc`
+Make Rust environment persistent:
+```bash
+echo 'source $HOME/.cargo/env' >> ~/.bashrc
+source ~/.bashrc
+```
 
-`curl -sSL https://raw.githubusercontent.com/soundnesslabs/soundness-layer/main/soundnessup/install | bash`
+## Install Soundness Layer
+Run the installation script:
+```bash
+curl -sSL https://raw.githubusercontent.com/soundnesslabs/soundness-layer/main/soundnessup/install | bash
+source ~/.bashrc
+```
 
-`source ~/.bashrc`
+## Install Soundness CLI
+```bash
+soundnessup install
+soundnessup update
+```
 
-`soundnessup install
-soundnessup update`
+## Key Management
+### Generate a Key Pair
+```bash
+soundness-cli generate-key --name my-key
+```
 
-`soundness-cli generate-key --name my-key`
+### Import a Key Pair (From Mnemonic)
+```bash
+soundness-cli import-key --name my-key
+```
 
-Importing a Key Pair To import an existing key pair from a mnemonic phrase:
+### List All Key Pairs
+```bash
+soundness-cli list-keys
+```
 
-`soundness-cli import-key --name my-key`
+### Export a Key's Mnemonic
+```bash
+soundness-cli export-key --name my-key
+```
 
-Listing Key Pairs To view all stored key pairs and their associated public keys:
+---
 
-`soundness-cli list-keys`
+## Notes
+- Ensure you have the necessary permissions to run the commands.
+- Always keep your key mnemonic secure.
+- If you face any issues, refer to the official documentation of Soundness Layer.
 
-Exporting Key Mnemonic To export the mnemonic phrase for a stored key pair:
+---
 
-`soundness-cli export-key --name my-key# Soundness
+### License
+This guide is open-source and available under the [MIT License](LICENSE).
+

@@ -1,10 +1,4 @@
 # Soundness Command
-Discord: https://discord.gg/fAbDjmAyHs
-Telegram: https://t.me/NachT_DROP
-
-
-
-
 
 🔹 Tw: https://tinyurl.com/yc7y3bzw
 🔹DC: https://tinyurl.com/e7j8pp63
@@ -83,8 +77,9 @@ soundness-cli export-key --name my-key
 - Always keep your key mnemonic secure.
 - If you face any issues, refer to the official documentation of Soundness Layer.
 
----
+For Update follw my 
+Discord: https://discord.gg/fAbDjmAyHs
+Telegram: https://t.me/NachT_DROP
 
-### License
-This guide is open-source and available under the [MIT License](LICENSE).
+
 
